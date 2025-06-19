@@ -163,13 +163,14 @@ body {
 .cart{
     color: white;
     display: flex;
+    position: relative;
 }
 .cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
     position: absolute;
-    font-size: 29px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
 
 }
 .plantname_heading{
@@ -210,10 +211,16 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
   }
+.product-button:disabled {
+    background-color: grey;
+}
   
   .product-button:hover {
     background-color: #45a049;
   }
+.product-button:disabled:hover {
+    background-color: grey;
+}
   
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
